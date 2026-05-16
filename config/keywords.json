@@ -1,0 +1,39 @@
+{
+  "linux": [
+    "sudo", "whoami", "rm -rf", "chmod", "/bin/bash", "passwd", "ifconfig", "iptables",
+    "netstat", "ss", "systemctl", "journalctl", "cron", "crontab", "ssh", "scp", "wget",
+    "curl", "nc", "nmap", "tcpdump", "strace", "lsof", "ps aux", "kill", "killall",
+    "chown", "useradd", "usermod", "groupadd", "passwd", "mount", "umount", "dd",
+    "tar", "gzip", "bzip2", "rsync", "find", "grep", "awk", "sed", "head", "tail",
+    "cut", "tr", "sort", "uniq", "df", "du", "top", "htop", "alias", "env", "export"
+  ],
+
+  "windows_cmd": [
+    "net user", "net localgroup", "ipconfig", "tasklist", "taskkill", "ping", "tracert",
+    "nslookup", "netstat", "route", "sc", "schtasks", "reg add", "reg query", "reg delete",
+    "dir", "copy", "move", "del", "mkdir", "rmdir", "attrib", "type", "fc", "findstr",
+    "set", "echo", "pause", "shutdown", "assoc", "ftype", "clip", "netsh", "cipher",
+    "diskpart", "format", "hostname", "systeminfo", "wmic", "schtasks", "powershell",
+    "taskmgr", "gpupdate", "gpresult", "whoami", "xcopy", "robocopy", "start"
+  ],
+
+  "powershell": [
+    "Get-Process", "Get-Service", "Get-EventLog", "Invoke-WebRequest", "Start-Process",
+    "Stop-Process", "Set-ExecutionPolicy", "Get-ChildItem", "Get-Content", "Set-Content",
+    "New-Item", "Remove-Item", "Copy-Item", "Move-Item", "Get-Command", "Get-Alias",
+    "Import-Module", "Export-Csv", "ConvertTo-Json", "ConvertFrom-Json", "Invoke-Command",
+    "Get-WmiObject", "Restart-Service", "Get-Help", "Test-Connection", "Get-ADUser",
+    "Set-ADUser", "Get-ADComputer", "Enable-PSRemoting", "Disable-PSRemoting"
+  ],
+
+  "malicious_patterns": [
+    "eval", "base64_decode", "exec", "system", "shell_exec", "passthru", "popen",
+    "proc_open", "assert", "preg_replace", "cmd.exe", "powershell -nop", "Invoke-Expression",
+    "IEX", "Invoke-WebRequest", "curl", "wget", "rm -rf /", "chmod 777", "nc -e",
+    "bash -i >& /dev/tcp", "0x", "\\\\x", "%00", "union select", "sleep(", "benchmark(",
+    "drop table", "insert into", "update set", "shutdown -r", "shutdown -s",
+    "net user /add", "net localgroup administrators", "reg add", "sc create",
+    "msiexec", "certutil -decode", "powershell -EncodedCommand", "cmd /c", "\\$",
+    "&&", "||", ";", "|", "$((", "${", "`", "%{", "eval(", "base64"
+  ]
+}
